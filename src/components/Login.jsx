@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(4)
     },
     logo: {
-        width: 300,
+        width: 100,
         height: 100,
         marginBottom: theme.spacing(2)
     }
@@ -82,9 +82,9 @@ export default function Login() {
     };
 
     return (
-        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'blue' }}>
+        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'gray' }}>
             <Paper className={classes.paper} elevation={5} style={{
-                backgroundColor: 'skyblue',
+                backgroundColor: 'white',
                 margin: 'auto',
                 position: 'absolute',
                 top: '50%',
@@ -93,7 +93,7 @@ export default function Login() {
                 height: '400px',
                 width: '400px'
             }}>
-                <img className={classes.logo} src='/n3.png' alt='logo' style={{borderRadius: '10px',border: 'none'}}/>
+                <img className={classes.logo} src='/n1.gif' alt='logo' style={{borderRadius: '10px',border: 'none'}}/>
                 <Typography variant="h4" align="center" gutterBottom >
                     Login
                 </Typography>
@@ -105,7 +105,7 @@ export default function Login() {
                 <form className={classes.form}>
                     <TextField label='Email' variant="outlined" fullWidth value={email} onChange={handleEmailChange} error={Boolean(emailError)} helperText={emailError} />
                     <TextField label='Password' variant="outlined" fullWidth value={password} onChange={handlePasswordChange} error={Boolean(passwordError)} helperText={passwordError} />
-                    <Button className={classes.submit} variant="contained" color="primary" type="submit" fullWidth onClick={login} style={{ backgroundColor: 'blue', fontFamily: 'Arial, sans-serif'}}sx={{ color: 'white' }}>
+                    <Button className={classes.submit} variant="contained" color="primary" type="submit" fullWidth onClick={login} style={{ backgroundColor: 'black'}}sx={{ color: 'white' }}>
                         Login
                     </Button>
                 </form>

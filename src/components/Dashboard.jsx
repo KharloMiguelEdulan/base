@@ -16,7 +16,7 @@ export default function Dashboard() {
                 height: '650px',
                 width: '1000px',borderRadius: '10px', border: 'none'
             }}>
-                <img src='/n1.gif' alt='logo' width={1000} height={670} style={{ borderRadius: '10px', border: 'none' }}/>
+                <img src='/n2.gif' alt='logo' width={1000} height={650} style={{ borderRadius: '10px', border: 'none' }}/>
                 <Link to='/login'>
                     <Button variant="contained" color="secondary" type="submit" fullWidth size="large">
                         Logout
