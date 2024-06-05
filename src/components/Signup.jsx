@@ -100,9 +100,9 @@ export default function Signup() {
   };
 
   return (
-    <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'blue' }}>
+    <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'black' }}>
             <Paper className={classes.paper} elevation={5} style={{
-                backgroundColor: 'skyblue',
+                backgroundColor: 'orange',
                 margin: 'auto',
                 position: 'absolute',
                 top: '50%',
@@ -111,7 +111,7 @@ export default function Signup() {
                 height: '500px',
                 width: '500px'
             }}>
-        <img className={classes.logo} src='/n3.png' alt='logo'style={{borderRadius: '10px',border: 'none'}}/>
+        <img className={classes.logo} src='/n2.png' alt='logo'style={{borderRadius: '10px',border: 'none'}}/>
         <Typography variant="h4" align="center" gutterBottom>
           Sign up
         </Typography>
@@ -119,7 +119,7 @@ export default function Signup() {
           <TextField label='Email' variant="outlined" fullWidth value={email} onChange={handleEmailChange} error={Boolean(emailError)} helperText={emailError} />
           <TextField label='Password' variant="outlined" fullWidth value={password} onChange={handlePasswordChange} error={Boolean(passwordError)} helperText={passwordError} />
           <TextField label='Confirm Password' variant="outlined" fullWidth value={confirmpassword} onChange={handleConfirmPasswordChange} error={Boolean(confirmpasswordError)} helperText={confirmpasswordError} />
-          <Button className={classes.submit} variant="contained" type="submit" fullWidth onClick={signup} style={{ backgroundColor: 'blue',}}sx={{ color: 'white' }}>
+          <Button className={classes.submit} variant="contained" type="submit" fullWidth onClick={signup} style={{ backgroundColor: 'black',}}sx={{ color: 'white' }}>
             Sign up
           </Button>
           {
@@ -135,7 +135,7 @@ export default function Signup() {
           <Grid item>
           Already have an account?
             <Link to='/login' className={classes.link}>
-              <Button className={classes.submit} variant="contained" type="submit" fullWidth style={{ backgroundColor: 'blue',}}sx={{ color: 'white' }}>
+              <Button className={classes.submit} variant="contained" type="submit" fullWidth style={{ backgroundColor: 'black',}}sx={{ color: 'white' }}>
                 Sign in
               </Button>
             </Link>
