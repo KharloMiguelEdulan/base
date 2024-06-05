@@ -81,9 +81,9 @@ export default function Login() {
         }
     };
     return (
-        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'black' }}>
+        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'blue' }}>
             <Paper className={classes.paper} elevation={5} style={{
-                backgroundColor: 'orange',
+                backgroundColor: 'skyblue',
                 margin: 'auto',
                 position: 'absolute',
                 top: '50%',
@@ -92,8 +92,8 @@ export default function Login() {
                 height: '400px',
                 width: '400px'
             }}>
-                <img className={classes.logo} src='/n2.png' alt='logo' style={{borderRadius: '10px',border: 'none'}}/>
-                <Typography variant="h4" align="center" gutterBottom>
+                <img className={classes.logo} src='/n3.png' alt='logo' style={{backgroundColor: 'none'}}/>
+                <Typography variant="h4" align="center" gutterBottom >
                     Login
                 </Typography>
                 {!errormessage && (
@@ -104,13 +104,13 @@ export default function Login() {
                 <form className={classes.form}>
                     <TextField label='Email' variant="outlined" fullWidth value={email} onChange={handleEmailChange} error={Boolean(emailError)} helperText={emailError} />
                     <TextField label='Password' variant="outlined" fullWidth value={password} onChange={handlePasswordChange} error={Boolean(passwordError)} helperText={passwordError} />
-                    <Button className={classes.submit} variant="contained" color="primary" type="submit" fullWidth onClick={login} style={{ backgroundColor: 'black',}}sx={{ color: 'white' }}>
+                    <Button className={classes.submit} variant="contained" color="primary" type="submit" fullWidth onClick={login} style={{ backgroundColor: 'blue', fontFamily: 'Arial, sans-serif'}}sx={{ color: 'white' }}>
                         Login
                     </Button>
                 </form>
                 <Grid container justifyContent="center">
                     <Grid item>
-                        <Link to='/signup' className={classes.link} sx={{ color: 'black' }}>
+                        <Link to='/signup' className={classes.link} sx={{ color: 'black', fontFamily: 'Arial, sans-serif'}}>
                             Don't have an account? Sign up
                         </Link>
                     </Grid>

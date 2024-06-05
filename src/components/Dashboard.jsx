@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
     return (
-        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'black' }}>
+        <Container maxWidth='false' style={{ height: '100vh', backgroundColor: 'white' }}>
             <Paper  style={{
                 backgroundColor: 'orange',
                 margin: 'auto',
@@ -14,12 +14,9 @@ export default function Dashboard() {
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
                 height: '650px',
-                width: '1000px'
+                width: '1000px',borderRadius: '10px', border: 'none'
             }}>
-                <Typography variant="h4" align="center">
-                    Dashboard
-                </Typography>
-                <img src='/n1.gif' alt='logo' width={800} height={600} />
+                <img src='/n1.gif' alt='logo' width={1000} height={670} style={{ borderRadius: '10px', border: 'none' }}/>
                 <Link to='/login'>
                     <Button variant="contained" color="secondary" type="submit" fullWidth size="large">
                         Logout
